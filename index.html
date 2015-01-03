@@ -7,15 +7,15 @@
 		<script>
 			function enterUsername(){
 				var userName = prompt('Enter your name:');
-				localStorage.setItem('userName') = userName;
-				document.quertSelector('.userNameWrapper').innerHTML = localStorage.getItem('userName');
+				localStorage.setItem('name', userName);
+				document.querySelector('.userNameWrapper').innerHTML = localStorage.getItem('name');
 			}
-			if(!localStorage.getItem('userName')){
+			if(!localStorage.getItem('name')){
 				//Call function to enter username
 				enterUsername();
 			} else{
 				//Will Show the name to user
-				document.quertSelector('.userNameWrapper').innerHTML = localStorage.getItem('userName');
+				document.querySelector('.userNameWrapper').innerHTML = localStorage.getItem('name');
 			}
 		</script>
 	</body>
