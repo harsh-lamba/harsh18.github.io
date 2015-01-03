@@ -3,6 +3,20 @@
 		<title>Hisab Kitab</title>
 	</head>
 	<body>
-		<h1>Hello</h1>
+		<h1>Hello</h1><label class="userNameWrapper"></label>
+		<script>
+			function enterUsername(){
+				var userName = prompt('Enter your name:');
+				localStorage.setItem('userName') = userName;
+				document.quertSelector('.userNameWrapper') = localStorage.getItem('userName');
+			}
+			if(!localStorage.getItem('userName')){
+				//Call function to enter username
+				enterUsername();
+			} else{
+				//Will Show the name to user
+				document.quertSelector('.userNameWrapper') = localStorage.getItem('userName');
+			}
+		</script>
 	</body>
 </html>
