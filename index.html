@@ -8,14 +8,14 @@
 			function enterUsername(){
 				var userName = prompt('Enter your name:');
 				localStorage.setItem('userName') = userName;
-				document.quertSelector('.userNameWrapper') = localStorage.getItem('userName');
+				document.quertSelector('.userNameWrapper').innerHTML = localStorage.getItem('userName');
 			}
 			if(!localStorage.getItem('userName')){
 				//Call function to enter username
 				enterUsername();
 			} else{
 				//Will Show the name to user
-				document.quertSelector('.userNameWrapper') = localStorage.getItem('userName');
+				document.quertSelector('.userNameWrapper').innerHTML = localStorage.getItem('userName');
 			}
 		</script>
 	</body>
