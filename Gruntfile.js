@@ -3,65 +3,81 @@
 * url
 * @author Harsh
 */
-
 'use strict';
 
-module.exports = function(grunt) {
 
-  // Project configuration.
+module.exports = function(grunt) {
+  //Loading packages using matchdep package
+  require("matchdep").filterDev("grunt-*").forEach(grunt.loadNpmTasks);
   grunt.initConfig({
+    
     pkg: grunt.file.readJSON('package.json'),
+    
     project : {
       assets : 'assets',
-      stylesheets : '<% project.assets %>/stylesheets',
-      sassSrc : '<% project.stylesheets %>/bootstrap.scss'
+      stylesheets : '<%= project.assets %>/sass'
     },
-    uglify: {
-      options: {
-        //<% %> using this we can add config properties
-        banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd") %> */\n'
+    
+    //Watch
+    watch: {
+      sass: {
+        files: ['<%= project.stylesheets %>/**/*.scss', '<%= project.stylesheets %>/main.scss'],
+        //files: ['sass/**/*.{scss,sass}','sass/_partials/**/*.{scss,sass}'],
+        tasks: ['sass:dist']
       },
-      build: {
-        src: 'src/<%= pkg.name %>.js',
-        dest: 'build/<%= pkg.name %>.min.js'
+      livereload: {
+        files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css','img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
+        options: {
+          livereload: true
+        }
       }
     },
+    
+    //Sass Compiling
     sass: {
-      //For development purpose
+      options: {
+        sourceMap: true,
+        //outputStyle: 'compressed'
+      },
       dev: {
         options: {
           style : 'expanded',
-          compass : true;
         },
         files : {
-          'build/style.css' : '<% project.sassSrc %>'
+          'build/style.css' : '<%= project.stylesheets %>/main.scss'
         }
       },
-      //For production purpose
       dist: {
-        options: {
-          style : 'compressed',
-          compass : true;
+        options : {
+          outputStyle: 'compressed'  
         },
         files: {
-          'build/style.css' : '<% project.sassSrc %>'
+          'build/style.css' : '<%= project.stylesheets %>/main.scss'
         }
       }
-    },
-    watch: {
-      css: {
-        files: ['<% project.sassSrc %>', '<% project.stylesheets %>/**/*.scss'],
-        tasks: ['sass:dev']
-      }
+    }, 
+
+    htmlhint: {
+    build: {
+      options: {
+          'tag-pair': true,
+          'tagname-lowercase': true,
+          'attr-lowercase': true,
+          'attr-value-double-quotes': true,
+          'doctype-first': true,
+          'spec-char-escape': true,
+          'id-unique': true,
+          'head-script-disabled': true,
+          'style-disabled': true
+      },
+      src: ['index.html']
     }
+}
   });
 
-  // Load the plugin that provides the "uglify, sass and watch" task.
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-sass');
-  grunt.loadNpmTasks('grunt-contrib-watch');
-
-  // Default task(s).
-  grunt.registerTask('default', ['sass:dev', 'watch']);
-
+  grunt.registerTask('default', [
+    'sass:dev',
+    //'htmlhint',
+    'watch'
+  ]);
 };
