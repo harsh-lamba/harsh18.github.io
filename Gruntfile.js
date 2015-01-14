@@ -14,7 +14,7 @@ module.exports = function(grunt) {
     pkg: grunt.file.readJSON('package.json'),
     
     project : {
-      app : 'app',
+      app : 'app', 
       assets : '<%= project.app %>/assets',
       stylesheets : '<%= project.assets %>/sass'
     },
