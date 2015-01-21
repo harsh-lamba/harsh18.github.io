@@ -45,7 +45,7 @@ module.exports = function(grunt) {
           style : 'expanded',
         },
         files : {
-          'build/style.css' : '<%= project.stylesheets %>/main.scss'
+          'app/build/style.css' : '<%= project.stylesheets %>/main.scss'
         }
       },
       dist: {
@@ -53,31 +53,40 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'  
         },
         files: {
-          'build/style.css' : '<%= project.stylesheets %>/main.scss'
+          'app/build/style.css' : '<%= project.stylesheets %>/main.scss'
         }
       }
     }, 
+    
+    cssmin: {
+      target: {
+        files: {
+          'app/build/output.css': 'app/assets/sass/style.css'
+        }
+      }
+    },
 
     htmlhint: {
-    build: {
-      options: {
-          'tag-pair': true,
-          'tagname-lowercase': true,
-          'attr-lowercase': true,
-          'attr-value-double-quotes': true,
-          'doctype-first': true,
-          'spec-char-escape': true,
-          'id-unique': true,
-          'head-script-disabled': true,
-          'style-disabled': true
-      },
-      src: ['index.html']
+        build: {
+          options: {
+              'tag-pair': true,
+              'tagname-lowercase': true,
+              'attr-lowercase': true,
+              'attr-value-double-quotes': true,
+              'doctype-first': true,
+              'spec-char-escape': true,
+              'id-unique': true,
+              'head-script-disabled': true,
+              'style-disabled': true
+          },
+          src: ['index.html']
+        }
     }
-}
   });
 
   grunt.registerTask('default', [
     'sass:dev',
+    'cssmin',
     //'htmlhint',
     'watch'
   ]);
