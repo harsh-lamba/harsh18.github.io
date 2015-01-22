@@ -2538,6 +2538,15 @@ textarea.input-lg, .form-group-lg .form-control, select[multiple].input-lg, .for
 input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block {
   width: 100%; }
 
+.btn {
+  display: block;
+  padding: 10px 15px; }
+  .btn.btn-default {
+    background: #ff9900;
+    color: #fff;
+    font-size: 18px;
+    border: 2px solid #FFC671; }
+
 .caret {
   display: inline-block;
   width: 0;
@@ -4221,12 +4230,15 @@ label.logo {
 
 .welcome-title {
   font-size: 5.625rem;
-  color: white; }
+  color: white;
+  padding-bottom: 70px; }
 
 .wrap-user-button {
-  height: calc(100% - 130px);
-  background: #d1d1d1; }
-  .wrap-user-button .icon-user {
-    font-size: 5.625rem; }
+  height: calc(100% - 200px);
+  background: #ecf0f1; }
+  .wrap-user-button .glyphicon-user {
+    font-size: 24.375rem;
+    margin-top: -54px;
+    padding-bottom: 170px; }
 
 /*# sourceMappingURL=build.css.map */

@@ -162,3 +162,13 @@ input[type="button"] {
 
 //Updated Buttons with New themes
 //---------------------------------------------------
+.btn{
+  display:block;
+  padding:10px 15px;
+  &.btn-default{
+    background:#ff9900;
+    color:#fff;
+    font-size:18px;
+    border:2px solid #FFC671;
+  } 
+}

@@ -32,12 +32,15 @@ label.logo{
 .welcome-title{
 	font-size: rem(90);
 	color:rgba(255, 255, 255, 1);
+	padding-bottom:70px;
 }
 
 .wrap-user-button{
-	height:calc(100% - 130px);
-	background:rgba(209, 209, 209, 1);
-	.icon-user{
-		font-size:rem(90);
+	height:calc(100% - 200px);
+	background:rgba(236, 240, 241, 1);
+	.glyphicon-user{
+		font-size:rem(390);
+		margin-top:-54px;
+		padding-bottom:170px;
 	}
 }
