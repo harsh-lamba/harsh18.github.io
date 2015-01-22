@@ -36,6 +36,7 @@ label.logo{
 }
 
 .wrap-user-button{
+	height:calc(100% - 200px);
 	background:rgba(236, 240, 241, 1);
 	.glyphicon-user{
 		font-size:rem(330);

@@ -4235,6 +4235,7 @@ label.logo {
   padding-bottom: 70px; }
 
 .wrap-user-button {
+  height: calc(100% - 200px);
   background: #ecf0f1; }
   .wrap-user-button .glyphicon-user {
     font-size: 20.625rem;
