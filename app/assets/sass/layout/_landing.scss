@@ -43,15 +43,6 @@ label.logo{
 	padding-bottom:70px;
 }
 
-.wrap-user-button{
-	/*background:rgba(236, 240, 241, 1);*/
-	.glyphicon-user{
-		font-size:rem(330);
-		margin-top:-10%;
-		padding-bottom:20%;
-	}
-}
-
 //Responsive View
 //-----------------------------------------------
 
@@ -59,7 +50,8 @@ label.logo{
 @media (max-width: $screen-xs-max) {
 	
 	.welcome-title{
-		font-size: rem(55);
+		font-size: rem(50);
+		font-size: 8.5vw;
 		color:rgba(149, 165, 166, .7);
 		padding-bottom:70px;
 		background:rgba(236, 240, 241, 0.9);
@@ -67,12 +59,4 @@ label.logo{
 		@include border-right-radius(6px);
 		padding:20px 25px;
 	}
-
-	.wrap-user-button{
-		position:absolute;
-		bottom:5%;
-		width:100%;
-	}
-
-
 }

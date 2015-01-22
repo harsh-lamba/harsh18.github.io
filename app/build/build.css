@@ -4242,16 +4242,10 @@ label.logo {
   color: rgba(149, 165, 166, 0.7);
   padding-bottom: 70px; }
 
-.wrap-user-button {
-  /*background:rgba(236, 240, 241, 1);*/ }
-  .wrap-user-button .glyphicon-user {
-    font-size: 20.625rem;
-    margin-top: -10%;
-    padding-bottom: 20%; }
-
 @media (max-width: 767px) {
   .welcome-title {
-    font-size: 3.4375rem;
+    font-size: 3.125rem;
+    font-size: 8.5vw;
     color: rgba(149, 165, 166, 0.7);
     padding-bottom: 70px;
     background: rgba(236, 240, 241, 0.9);
@@ -4260,11 +4254,6 @@ label.logo {
     border-bottom-right-radius: 6px;
     border-top-right-radius: 6px;
     padding: 20px 25px; }
-
-  .wrap-user-button {
-    position: absolute;
-    bottom: 5%;
-    width: 100%; }
  }
 
 /*# sourceMappingURL=build.css.map */
