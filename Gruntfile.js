@@ -21,6 +21,9 @@ module.exports = function(grunt) {
     
     //Watch
     watch: {
+      css : {
+        files : '<%= project.stylesheets %>/**/*.css'
+      },
       sass: {
         files: ['<%= project.stylesheets %>/**/*.scss', '<%= project.stylesheets %>/main.scss'],
         //files: ['sass/**/*.{scss,sass}','sass/_partials/**/*.{scss,sass}'],
@@ -45,7 +48,7 @@ module.exports = function(grunt) {
           style : 'expanded',
         },
         files : {
-          'app/build/style.css' : '<%= project.stylesheets %>/main.scss'
+          'app/build/build.css' : '<%= project.stylesheets %>/main.scss'
         }
       },
       dist: {
@@ -53,7 +56,7 @@ module.exports = function(grunt) {
           outputStyle: 'compressed'  
         },
         files: {
-          'app/build/style.css' : '<%= project.stylesheets %>/main.scss'
+          'app/build/build.css' : '<%= project.stylesheets %>/main.scss'
         }
       }
     }, 
@@ -61,10 +64,22 @@ module.exports = function(grunt) {
     cssmin: {
       target: {
         files: {
-          'app/build/output.css': 'app/assets/sass/style.css'
+          'app/build/build.css': ['<%= project.stylesheets %>/**/*.css', 'app/build/build.css']
         }
       }
     },
+
+    
+    concat_css: {
+      options: {
+        // Task-specific options go here.
+      },
+      all: {
+        src: ["<%= project.stylesheets %>/**/*.css", "app/build/build.css"],
+        dest: "app/build/build.css"
+      },
+    },
+    
 
     htmlhint: {
         build: {
@@ -86,7 +101,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('default', [
     'sass:dev',
-    'cssmin',
+    'concat_css',
     //'htmlhint',
     'watch'
   ]);
