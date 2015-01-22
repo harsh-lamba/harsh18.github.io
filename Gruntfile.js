@@ -97,7 +97,7 @@ module.exports = function(grunt) {
               'head-script-disabled': true,
               'style-disabled': true
           },
-          src: ['index.html']
+          src: ['app/index.html']
         }
     }
   });
@@ -105,7 +105,7 @@ module.exports = function(grunt) {
   grunt.registerTask('default', [
     'sass:dev',
     'concat_css',
-    //'htmlhint',
+    'htmlhint',
     'watch'
   ]);
 };

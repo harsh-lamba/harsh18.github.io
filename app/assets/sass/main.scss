@@ -3,8 +3,10 @@
 #	Date : 22nd Jan 2015
 */
 
-//Bourbon library
+// library and fonts
 @import "bourbon";
+@import url("http://fonts.googleapis.com/css?family=Roboto ");
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 // Core variables and mixins
 @import "utilities/variables";
@@ -13,6 +15,7 @@
 // Reset and dependencies
 @import "base/normalize";
 @import "components/glyphicons";
+@import "base/fontAwesome";
 
 // Core CSS
 @import "base/scaffolding";
@@ -53,3 +56,7 @@
 // Utility classes
 @import "utilities/utilities";
 @import "layout/responsive-utilities";
+
+
+//Pages
+@import "layout/landing.scss";
