@@ -4211,6 +4211,7 @@ html, body {
   height: 100%; }
 
 body {
+  padding-top: 5%;
   background: #0077bb;
   font-family: roboto, cursive;
   background: url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
