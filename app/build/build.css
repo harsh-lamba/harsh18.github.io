@@ -2545,7 +2545,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     background: #ff9900;
     color: #fff;
     font-size: 18px;
-    border: 2px solid #FFC671; }
+    border: 2px solid #FFC671;
+    margin-bottom: 15px; }
 
 .caret {
   display: inline-block;
@@ -4234,11 +4235,10 @@ label.logo {
   padding-bottom: 70px; }
 
 .wrap-user-button {
-  height: calc(100% - 200px);
   background: #ecf0f1; }
   .wrap-user-button .glyphicon-user {
-    font-size: 24.375rem;
-    margin-top: -54px;
+    font-size: 18.125rem;
+    margin-top: -10%;
     padding-bottom: 170px; }
 
 /*# sourceMappingURL=build.css.map */
