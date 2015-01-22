@@ -1,8 +1,9 @@
 /*
-* Harsh Gruntfile
-* url
-* @author Harsh
+# Author : Harsh Kumar Lamba
+# Date : 
+# Description : Grunt file handling different task to automate tasks via sass compile, watch files, concatenate, htmllint.
 */
+
 'use strict';
 
 
