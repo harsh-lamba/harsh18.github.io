@@ -4212,7 +4212,12 @@ html, body {
 
 body {
   background: #0077bb;
-  font-family: roboto, cursive; }
+  font-family: roboto, cursive;
+  background: url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
 
 .container-fluid {
   height: 100%; }
@@ -4231,12 +4236,12 @@ label.logo {
 
 .welcome-title {
   font-size: 5.625rem;
-  color: white;
+  color: rgba(255, 255, 255, 0.7);
+  color: rgba(149, 165, 166, 0.7);
   padding-bottom: 70px; }
 
 .wrap-user-button {
-  height: calc(100% - 200px);
-  background: #ecf0f1; }
+  /*background:rgba(236, 240, 241, 1);*/ }
   .wrap-user-button .glyphicon-user {
     font-size: 20.625rem;
     margin-top: -10%;

@@ -6,6 +6,11 @@ html,body{
 body{
 	background:rgba(0, 119, 187, 1);
 	font-family:roboto, cursive;
+	background:url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
+	-webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
 }
 
 .container-fluid{
@@ -31,13 +36,13 @@ label.logo{
 
 .welcome-title{
 	font-size: rem(90);
-	color:rgba(255, 255, 255, 1);
+	color:rgba(255, 255, 255, .7);
+	color:rgba(149, 165, 166, .7);
 	padding-bottom:70px;
 }
 
 .wrap-user-button{
-	height:calc(100% - 200px);
-	background:rgba(236, 240, 241, 1);
+	/*background:rgba(236, 240, 241, 1);*/
 	.glyphicon-user{
 		font-size:rem(330);
 		margin-top:-10%;
