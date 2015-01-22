@@ -27,7 +27,7 @@ module.exports = function(grunt) {
       sass: {
         files: ['<%= project.stylesheets %>/**/*.scss', '<%= project.stylesheets %>/main.scss'],
         //files: ['sass/**/*.{scss,sass}','sass/_partials/**/*.{scss,sass}'],
-        tasks: ['sass:dist']
+        tasks: ['sass:dev']
       },
       livereload: {
         files: ['*.html', '*.php', 'js/**/*.{js,json}', 'css/*.css','img/**/*.{png,jpg,jpeg,gif,webp,svg}'],
@@ -41,6 +41,8 @@ module.exports = function(grunt) {
     sass: {
       options: {
         sourceMap: true,
+        // loadPath: require('node-bourbon').with('other/path', 'another/path')
+        includePaths: require('node-bourbon').includePaths
         //outputStyle: 'compressed'
       },
       dev: {
