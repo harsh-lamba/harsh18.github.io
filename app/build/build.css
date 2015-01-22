@@ -4208,7 +4208,7 @@ button.close {
  }
 
 html, body {
-  height: 100%; }
+  min-height: 100%; }
 
 body {
   padding-top: 5%;
@@ -4221,7 +4221,6 @@ body {
   background-size: cover; }
 
 .container-fluid {
-  height: 100%;
   position: relative; }
 
 label.logo {
