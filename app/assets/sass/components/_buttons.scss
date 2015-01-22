@@ -158,3 +158,18 @@ input[type="button"] {
     width: 100%;
   }
 }
+
+
+//Updated Buttons with New themes
+//---------------------------------------------------
+.btn{
+  display:block;
+  padding:10px 15px;
+  &.btn-default{
+    background:#ff9900;
+    color:#fff;
+    font-size:18px;
+    border:2px solid #FFC671;
+    margin-bottom:15px;
+  } 
+}

@@ -1,12 +1,17 @@
+/*
+# Author : Fontasticme.com
+# Date : 22nd Jan 2015
+*/
+
 @charset "UTF-8";
 
 @font-face {
   font-family: "hisab-kitab";
-  src:url("fonts/hisab-kitab.eot");
-  src:url("fonts/hisab-kitab.eot?#iefix") format("embedded-opentype"),
-    url("fonts/hisab-kitab.woff") format("woff"),
-    url("fonts/hisab-kitab.ttf") format("truetype"),
-    url("fonts/hisab-kitab.svg#hisab-kitab") format("svg");
+  src:url("../assets/fonts/font-awesome/hisab-kitab.eot");
+  src:url("../assets/fonts/font-awesome/hisab-kitab.eot?#iefix") format("embedded-opentype"),
+    url("../assets/fonts/font-awesome/hisab-kitab.woff") format("woff"),
+    url("../assets/fonts/font-awesome/hisab-kitab.ttf") format("truetype"),
+    url("../assets/fonts/font-awesome/hisab-kitab.svg#hisab-kitab") format("svg");
   font-weight: normal;
   font-style: normal;
 
