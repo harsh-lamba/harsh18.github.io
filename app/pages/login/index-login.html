@@ -27,10 +27,29 @@
     <header class="text-center">
       <label class="logo text-center size-1x"><span class="first-part">Hisab</span>-Kitab</label>
     </header>
-    <section class="container-fluid">
+    <section class="container-fluid container-block">
       <form method="post" ng-submit="">
         <article class="row">
-
+          <div class="col-sm-12">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Name</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Remember me
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
         </article>
       </form>
     </section>
