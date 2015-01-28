@@ -4,18 +4,22 @@ html,body{
 }
 
 body{
-	padding-top:5%;
-	background:rgba(0, 119, 187, 1);
-	font-family:roboto, cursive;
-	background:url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
-	-webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+	&.body-landing{
+		padding-top:5%;
+		background:rgba(0, 119, 187, 1);
+		font-family:roboto, cursive;
+		background:url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
+		-webkit-background-size: cover;
+		  -moz-background-size: cover;
+		  -o-background-size: cover;
+		  background-size: cover;
+	}
 }
 
 .container-fluid{
-	position:relative;
+	&.container-landing{
+		position:relative;
+	}
 }
 
 //Logo - Comoon

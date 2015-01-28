@@ -4207,10 +4207,16 @@ button.close {
     display: none !important; }
  }
 
+header {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  background: #95a5a6; }
+
 html, body {
   min-height: 100%; }
 
-body {
+body.body-landing {
   padding-top: 5%;
   background: #0077bb;
   font-family: roboto, cursive;
@@ -4220,7 +4226,7 @@ body {
   -o-background-size: cover;
   background-size: cover; }
 
-.container-fluid {
+.container-fluid.container-landing {
   position: relative; }
 
 label.logo {

@@ -16,6 +16,7 @@ module.exports = function(grunt) {
     
     project : {
       app : 'app', 
+      pages : '<%= project.app %>/pages',
       assets : '<%= project.app %>/assets',
       stylesheets : '<%= project.assets %>/sass'
     },
@@ -26,7 +27,7 @@ module.exports = function(grunt) {
         files : '<%= project.stylesheets %>/**/*.css'
       },
       sass: {
-        files: ['<%= project.stylesheets %>/**/*.scss', '<%= project.stylesheets %>/main.scss'],
+        files: ['<%= project.stylesheets %>/**/*.scss', '<%= project.stylesheets %>/main.scss', '<%= project.pages %>/**/*.scss'],
         //files: ['sass/**/*.{scss,sass}','sass/_partials/**/*.{scss,sass}'],
         tasks: ['sass:dev']
       },
@@ -82,7 +83,6 @@ module.exports = function(grunt) {
         dest: "app/build/build.css"
       },
     },
-    
 
     htmlhint: {
         build: {
@@ -99,6 +99,16 @@ module.exports = function(grunt) {
           },
           src: ['app/index.html']
         }
+    },
+
+    connect: {
+      server: {
+        options: {
+          port: 9001,
+          keepalive : true,
+          base: 'app/'
+        }
+      }
     }
   });
 
@@ -108,4 +118,8 @@ module.exports = function(grunt) {
     'htmlhint',
     'watch'
   ]);
+  grunt.registerTask('server', [
+    'connect'
+  ]);
+
 };
