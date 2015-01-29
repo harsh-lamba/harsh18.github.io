@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="hisabKitabLogin">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,27 +23,27 @@
     <![endif]-->
   </head>
 
-  <body>
+  <body ng-controller="loginController as userSecureData">
     <header class="text-center">
       <label class="logo text-center size-1x"><span class="first-part">Hisab</span>-Kitab</label>
     </header>
     <section class="container-fluid container-block space-top-size1x">
-      <form method="post" ng-submit="">
+      <form method="post" ng-submit="submitLoginForm()">
         <article class="row">
           <div class="col-sm-12">
             <div class="form-group">
               <label for="exampleInputEmail1">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+              <input type="email" class="form-control" ng-model="userSecureData.email" placeholder="Enter email">
             </div>
             <div class="form-group">
               <label for="exampleInputEmail1">Name</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
+              <input type="text" class="form-control" ng-model="userSecureData.name" placeholder="Enter name">
             </div>
             <div class="form-group">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              <input type="password" class="form-control" ng-model="userSecureData.password" placeholder="Password">
             </div>
-            <div class="checkbox">
+            <div class="checkbox hidden">
               <label>
                 <input type="checkbox"> Remember me
               </label>
@@ -59,6 +59,9 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/app/assets/lib/jquery.min.js"></script>
     <script src="/app/assets/lib/bootstrap.min.js"></script>
+    <script src="/app/assets/lib/angular.min.js"></script>
+    <script src="/app/config/login.js"></script>
+    <script src="/app/pages/login/loginController.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
