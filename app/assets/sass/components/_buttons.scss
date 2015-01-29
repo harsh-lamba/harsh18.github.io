@@ -51,6 +51,9 @@
     @include opacity(.65);
     @include box-shadow(none);
   }
+  &.width-full{
+    width:100%;
+  }
 }
 
 

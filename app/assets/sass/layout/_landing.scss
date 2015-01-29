@@ -1,19 +1,21 @@
 //Landing Page
-html,body{
-	min-height:100%;
-	/* background:rgba(236, 240, 241, 1);*/
-}
-
-body{
-	&.body-landing{
-		padding-top:5%;
-		background:rgba(0, 119, 187, 1);
-		font-family:roboto, cursive;
-		background:url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
-		-webkit-background-size: cover;
-		  -moz-background-size: cover;
-		  -o-background-size: cover;
-		  background-size: cover;
+//Landing Page
+html{
+	margin:0;
+	height:100%;
+	body{
+		min-height:100%;
+		background:rgba(236, 240, 241, 1);
+		&.body-landing{
+			padding-top:5%;
+			background:rgba(0, 119, 187, 1);
+			font-family:roboto, cursive;
+			background:url('../assets/images/employee_checks_phone.jpg') no-repeat top right;
+			-webkit-background-size: cover;
+			  -moz-background-size: cover;
+			  -o-background-size: cover;
+			  background-size: cover;
+		}
 	}
 }
 
@@ -49,7 +51,12 @@ label.logo{
 
 //Responsive View
 //-----------------------------------------------
-
+//Nothing to show above 768px
+@media (min-width: $screen-xs-max) {
+	body{
+		display:none;
+	}	
+}
 //Extra small Screen
 @media (max-width: $screen-xs-max) {
 	
