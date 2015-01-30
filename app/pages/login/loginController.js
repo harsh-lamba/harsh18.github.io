@@ -13,6 +13,6 @@ angular.module('hisabKitabLoginController', []).
 			userSecureData = $scope.userSecureData;
 			console.log($scope.userSecureData);
 			//Access service to store data into DB....(for now it is Session storage).
-
+			
 		};
 	}]);

@@ -6,4 +6,12 @@
 
 'use strict'
 
-angular.module('hisabKitabLoginService', []).factory();
+angular.module('hisabKitabLoginService', []).
+	factory('saveUserCredential', function(){
+		
+		return {
+			saveData : function(data){
+				
+			}
+		}
+	});
