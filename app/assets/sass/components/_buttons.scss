@@ -175,7 +175,7 @@ input[type="button"] {
     font-size:18px;
     border:2px solid #FFC671;
     margin-bottom:15px;
-    &:active{
+    &:active, &:hover{
       @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125)); 
       font-size:rem(22);
     }
