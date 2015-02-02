@@ -2398,8 +2398,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     outline: 0;
     background-image: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    color: red; }
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
   .btn.disabled, .btn[disabled], fieldset[disabled] .btn {
     cursor: not-allowed;
     pointer-events: none;
@@ -2567,10 +2566,6 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     font-size: 18px;
     border: 2px solid #FFC671;
     margin-bottom: 15px; }
-    .btn.btn-default:active {
-      -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-      box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-      font-size: 1.375rem; }
 
 .caret {
   display: inline-block;
