@@ -369,6 +369,11 @@ input[type="checkbox"] {
 }
 .has-error {
   @include form-control-validation($state-danger-text, $state-danger-text, $state-danger-bg);
+  p{
+    color:#a94442;
+    font-size: rem(18);
+    font-style:italic;
+  }
 }
 
 // Reposition feedback icon if input has visible label above

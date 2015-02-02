@@ -2278,6 +2278,10 @@ textarea.input-lg, .form-group-lg .form-control, select[multiple].input-lg, .for
   background-color: #f2dede; }
 .has-error .form-control-feedback {
   color: #a94442; }
+.has-error p {
+  color: #a94442;
+  font-size: 1.125rem;
+  font-style: italic; }
 
 .has-feedback label ~ .form-control-feedback {
   top: 25px; }
