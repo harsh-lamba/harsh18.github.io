@@ -29,26 +29,25 @@
     </header>
     <section class="container-fluid container-block space-top-size1x">
     <!-- Login & registration form -->
-      <form method="post" ng-submit="submitLoginForm()" novalidate name="loginForm">
+      <form method="post" ng-submit="submitLoginForm(loginForm.$valid)" novalidate name="loginForm" >
         <article class="row">
           <div class="col-sm-12">
             <!-- Email Address -->
-            <div class="form-group" ng-class="{'has-error' : loginForm.$invalid && formSubmitted}">
+            <div class="form-group" ng-class="{'has-error' : loginForm.$invalid && formSubmitted && loginForm.email.$invalid}">
               <label for="exampleInputEmail1">Email address</label>
               <input type="email" name ="email" class="form-control" ng-model="userSecureData.email" placeholder="Enter email" required>
-              <p ng-show="loginForm.$invalid && formSubmitted">Enter correct format eg. example@gg.com</p>
+              <p ng-show="loginForm.$invalid && formSubmitted && loginForm.email.$invalid">Enter correct format eg. example@gg.com</p>
             </div>
             <!-- Name -->
-            <div class="form-group" ng-class="{'has-error' : loginForm.$invalid && formSubmitted}">
+            <div class="form-group" ng-class="{'has-error' : loginForm.$invalid && formSubmitted && loginForm.userName.$invalid}">
               <label for="exampleInputEmail1">Name</label>
               <input type="text" class="form-control" name="userName" ng-model="userSecureData.name" placeholder="Enter name" required>
-              <p ng-show="loginForm.$invalid && formSubmitted">Name Field cannot be blank</p>
+              <p ng-show="loginForm.$invalid && formSubmitted && loginForm.userName.$invalid">Name Field cannot be blank</p>
             </div>
             <!-- Password -->
-            <div class="form-group" ng-class="{'has-error' : loginForm.$invalid && formSubmitted}">
+            <div class="form-group hidden">
               <label for="exampleInputPassword1">Password</label>
-              <input type="password" class="form-control" name="pass" ng-model="userSecureData.password" placeholder="Password" required>
-              <p ng-show="loginForm.$invalid && formSubmitted">Please enter password</p>
+              <input type="password" class="form-control" placeholder="Password" required>
             </div>
             <div class="checkbox hidden">
               <label>
