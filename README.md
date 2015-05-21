@@ -6,7 +6,7 @@ Hisab kitab
 ##Color Palette
 <table>
 	<tr>
-		<td col-span = "4">Colors</td>
+		<td colspan="4">Colors</td>
 	</tr>
 	<tr>
 		<td></td>
