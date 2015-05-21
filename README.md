@@ -27,6 +27,27 @@ Hisab kitab
 		<td vertical-align="middle"><img src="http://i62.tinypic.com/35k61ck.jpg" alt="Dark"/></td>
 		<td>Backup Dark - #651fff</td>
 	</tr>
+	<tr>
+		<td colspan="6"><b>Text - Color on light backgrounds<b/></td>
+	</tr>
+	<tr>
+		<td vertical-align="middle">Primary text</td>
+		<td>87% of #000</td>
+		<td vertical-align="middle">Secondary text</td>
+		<td>54% of #000</td>
+		<td vertical-align="middle">Disabled/Hints</td>
+		<td>26% of #000</td>
+	</tr>
+	<tr>
+		<td colspan="6"><b>Divider color<b/></td>
+	</tr>
+	<tr>
+		<td vertical-align="middle" col-span="6">Divider</td>
+		<td>12% of #000</td>
+	</tr>
 </table>
 
-####Thanks to google design guidelines
+###Secondary Color
+Use Secondary color for your primary action button and components like switches or slides 
+
+#####Thanks to @Google design guidelines
