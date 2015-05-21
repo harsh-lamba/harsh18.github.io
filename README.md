@@ -9,7 +9,7 @@ Hisab kitab
 		<td colspan="5">Colors</td>
 	</tr>
 	<tr>
-		<td></td>
+		<td><img src="http://i61.tinypic.com/2h73zn6.jpg" alt="Primarycolor"/></td>
 		<td></td>
 		<td></td>
 		<td></td>
