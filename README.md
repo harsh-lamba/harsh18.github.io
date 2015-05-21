@@ -6,7 +6,7 @@ Hisab kitab
 ##Color Palette
 <table>
 	<tr>
-		<td colspan="4">Colors</td>
+		<td colspan="5">Colors</td>
 	</tr>
 	<tr>
 		<td></td>
@@ -17,3 +17,4 @@ Hisab kitab
 	</tr>
 </table>
 
+####Thanks to google design guidelines
