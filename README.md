@@ -6,7 +6,7 @@ Hisab kitab
 ##Color Palette
 <table>
 	<tr>
-		<td colspan="5">Colors</td>
+		<td colspan="6"><b>Colors<b/></td>
 	</tr>
 	<tr>
 		<td><img src="http://i61.tinypic.com/2h73zn6.jpg" alt="Primarycolor"/></td>
