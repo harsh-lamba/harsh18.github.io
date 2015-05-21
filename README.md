@@ -4,7 +4,7 @@ Hisab kitab
 
 
 ##Color Palette
-<table>
+<table style="font-size:12px">
 	<tr>
 		<td colspan="6"><b>Color - Primary Color with hue<b/></td>
 	</tr>
