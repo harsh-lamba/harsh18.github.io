@@ -10,11 +10,11 @@ Hisab kitab
 	</tr>
 	<tr>
 		<td vertical-align="middle"><img src="http://i61.tinypic.com/2h73zn6.jpg" alt="Primarycolor"/></td>
-		<td>Primary Color</td>
+		<td>#fb8c00</td>
 		<td vertical-align="middle"><img src="http://i58.tinypic.com/etz11j.jpg" alt="Primarycolor - hue light"/></td>
-		<td>Hue light</td>
+		<td>#ffcc80</td>
 		<td vertical-align="middle"><img src="http://i61.tinypic.com/2lt5zf4.jpg" alt="Primarycolor- hue Dark"/></td>
-		<td>Hue Dark</td>
+		<td>#ef6c00</td>
 	</tr>
 	<tr>
 		<td colspan="6"><b>Color - Secondary Color<b/></td>
